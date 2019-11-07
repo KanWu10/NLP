@@ -112,6 +112,7 @@ def process():
             result = 'Top3 keyword: %s' % (' / '.join(keywords[:3]))
             #return render_template('otherservice.html', textresult=result, texttoinput=text)
         return render_template('finish.html', result = result, originaltext = text)
+    return render_template('finish.html',name = 0)
 
 
 
