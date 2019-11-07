@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>NLP Services</title>
+  </head>
+  <body>
+    <div class="container">
+    <h1>NLP Services</h1>
+    <p>This web page supports 6 different NLP services.
+    </p>
+    <div class="row">
+  <div class="col">
+    <form>
+      <!-- Select service type. -->
+      <div class="form-group">
+        <label for="Choose your service type"><strong>Choose your service type:</strong></label>
+        <select class="form-control" id="select-service">
+          <option>Translate </option>
+          <option>Summarize</option>
+          <option>Sentiment Analysis</option>
+          <option>Keywords Extraction</option>
+          <option>Spam mail recognition</option>
+        </select>
+      </div>
+      <p>
+      </p>
+      <!-- Type your text here. -->
+      <div class="form-group">
+        <label for="text-to-input"><strong>Enter your text here:</strong></label>
+        <textarea class="form-control" id="texttoinput" rows="8" cols="178">{{originaltext}}</textarea>
+      </div>
+      <button type="submit" class="btn btn-primary mb-2" id="Submit">Submit</button></br>
+    </form>
+  </div>
+  <p>
+  </p>
+  <div class="col">
+    <!-- Translated text returned by the Translate API is rendered here. -->
+    <form>
+      <div class="form-group" id="text-result">
+        <label for="process-result"><strong>Result:</strong></label>
+        <textarea readonly class="form-control" id="textresult" rows="5" cols="175">{{resilt}}</textarea>
+      </div>
+
+    </form>
+
+  </div>
+</div>
+    </div>
+  </body>
+</html>
