@@ -144,7 +144,7 @@ app = Flask(__name__)
 def process():
 
     if request.method == 'POST':
-        option == request.form['option']
+        option = request.form['option']
         text = request.form['text-to-input']
 
         if option == 'Translate':
