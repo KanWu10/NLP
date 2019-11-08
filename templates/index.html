@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>NLP Web Services</title>
+    </head>
+
+    <body>
+        <h1 align="center">NLP Web Services</h1>
+        <!-- Form -->
+        <form method="post" autocomplete="on">
+            <label for="name"><strong>Enter your text here</strong></label><br>
+            <textarea  name="text" id="text-to-input" style="width:100%; height:200px;">{{ originaltext }}</textarea></textarea><br>
+            <input type="submit" name="option" value="Summarize">
+            <input type="submit" name="option" value="Translate">
+            <input type="submit" name="option" value="Sentiment Analyse">
+            <input type="submit" name="option" value="Keyword Extraction">
+            <input type="submit" name="option" value="Spam Mail Recognition">
+            <input type="submit" name="option" value="Spell Correction">
+
+
+        </form>
+        <br>
+        <br>
+        <!-- Result -->
+        <form>
+            <label for="process-result"><strong>Result:</strong></label>
+            <textarea readonly class="form-control" id="textresult" rows="5" cols="175">{{result}}</textarea>
+        </form>
+    </body>
+
+
+</html>
